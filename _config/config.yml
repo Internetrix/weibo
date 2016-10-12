@@ -1,0 +1,26 @@
+---
+Name: weibo
+After: 'framework/*','cms/*'
+---
+
+OpauthAuthenticator:
+  opauth_settings:
+    Strategy:
+      Weibo:
+        app_id_CN: '2468708646'
+        app_secret_CN: '632ed50c4832e68a3e9f36bad2e968f0'
+        app_domain_CN: 'betterhotelroom.cn'
+        app_id_AU: '1016357369'
+        app_secret_AU: '704840f7dc856103ea3b2a04b0abf57c'
+        app_domain_AU: 'demo.betterhotelroom.com'
+OpauthIdentity:
+  member_mapper:
+    Weibo:
+      FirstName: 'info.first_name'
+      Surname: 'info.last_name'
+      Locale: 'raw.locale'
+      Email: 'info.email'
+      ImageURL: 'info.image'
+Director:
+  rules:
+    'weiboopauth': 'WeiboOpauthController'

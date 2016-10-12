@@ -1,0 +1,5 @@
+en_AU:
+  IRXWeibo_ss:
+    EMAIL: '邮箱'
+    ReservedEmail: '该邮箱用于联系用户'
+    EMAILEXISTS: '该邮箱已存在'
