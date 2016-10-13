@@ -4,7 +4,9 @@
 	"type" : "silverstripe-module",
 	"keywords" : [
 		"silverstripe",
-		"weibo"
+		"weibo",
+		"authentication",
+		"auth"
 	],
 	"license" : "BSD-3-Clause",
 	"authors" : [{
