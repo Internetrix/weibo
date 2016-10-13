@@ -61,7 +61,7 @@ class WeiboOpauthController extends OpauthController{
 		$check = Member::get()->filter('Email', Convert::raw2sql($data['Email']))->first();
 		
 		if($check) {
-			$form->addErrorMessage('Email', 'This email already exists', 'bad');
+			$form->addErrorMessage('Email',  _t('IRXWeibo_ss.EMAILEXISTS', 'This email already exists'), 'bad');
 		
 			return $this->redirectBack();
 		}
